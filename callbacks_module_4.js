@@ -1,9 +1,13 @@
 
-  let gender = confirm(`Ваша стать "Ч" ?`);
+  let getGender = prompt(`Ваша стать: "Чоловік" - введіть "1", якщо "Жінка" - "2" ?`);
+  let gender = getGender === 1 ? true : false;
   let gendr = gender === true ? "шановний" : "шановна" ;
   let gendr2 = gender === true ? "Шановний" : "Шановна" ;
 
 let pizzaForMatherFuckers = function () {
+  
+  
+  
   if (gender === false) {
     
     makePizza(gender, function eatPizza(pizzaName) {
